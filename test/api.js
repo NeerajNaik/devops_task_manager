@@ -21,7 +21,7 @@ describe('Tasks API', () => {
                 console.log("dd")
                 done();
             })
-        })
+        }).timeout(5000);
     })
     describe('GET wrong API anytask', () => {
         it("It should NOT get all tasks", (done) => {
